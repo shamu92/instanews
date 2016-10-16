@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Instanews Project 2</title>
+    <link rel="stylesheet" href="build/css/style.min.css">
+
+</head>
+
+<body>
+    <div class="logo-and-form">
+        <section class="nyt-logo">
+            <img src="images/nyt-logo.svg" alt="nyt-logo">
+        </section>
+
+        <form class="search" action="#" method="post">
+            <div class="search_options">
+                <h4>Choose a section:</h4>
+                <select name="dropdown" id="dropdown">
+                <option selected="true" disabled="disabled">Sections...</option>
+                <option value="world" id="world">World</option>
+                <options value="business">Business</option>
+                <option value="technology">Tech</option>
+                <option value="science">Science</option>
+                <option value="food">Food</option>
+                <option value="movies">Movies</option>
+                <option value="sports">Sports</option>
+            </select>
+            </div>
+        </form>
+    </div>
+
+    <ul class="top-news"></ul>
+
+    <footer>
+        <div class=footer>
+            <p>&copy; Copyright 2016 <span>instanews</span></p>
+        </div>
+    </footer>
+    <script src="lib/jquery-3.1.1.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

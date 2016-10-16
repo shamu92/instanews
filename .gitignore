@@ -1,0 +1,6 @@
+# Ignore system files
+
+
+# Ignore npm packages 
+
+node_modules/

@@ -1,0 +1,293 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url("fonts/opensans-bold-webfont.eot");
+    src: url("fonts/opensans-bold-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-bold-webfont.woff2") format("woff2"), url("fonts/opensans-bold-webfont.woff") format("woff"), url("fonts/opensans-bold-webfont.ttf") format("truetype"), url("fonts/opensans-bold-webfont.svg#open_sansbold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url("fonts/opensans-bolditalic-webfont.eot");
+    src: url("fonts/opensans-bolditalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-bolditalic-webfont.woff2") format("woff2"), url("fonts/opensans-bolditalic-webfont.woff") format("woff"), url("fonts/opensans-bolditalic-webfont.ttf") format("truetype"), url("fonts/opensans-bolditalic-webfont.svg#open_sansbold_italic") format("svg");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url("fonts/opensans-light-webfont.eot");
+    src: url("fonts/opensans-light-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-light-webfont.woff2") format("woff2"), url("fonts/opensans-light-webfont.woff") format("woff"), url("fonts/opensans-light-webfont.ttf") format("truetype"), url("fonts/opensans-light-webfont.svg#open_sanslight") format("svg");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open-sans';
+    src: url("fonts/opensans-lightitalic-webfont.eot");
+    src: url("fonts/opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/opensans-lightitalic-webfont.woff2") format("woff2"), url("fonts/opensans-lightitalic-webfont.woff") format("woff"), url("fonts/opensans-lightitalic-webfont.ttf") format("truetype"), url("fonts/opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
+    font-weight: lighter;
+    font-style: italic;
+}
+
+body {
+    font-family: 'open-sans', 'Arial';
+    font-weight: 100;
+    font-size: 16px;
+}
+
+
+/*@font-face {
+    font-family: 'OpenSans-light';
+    src: url(fonts/OpenSans-Light.ttf)
+}*/
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    /*text-align: center;*/
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo-and-form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column;
+    flex-flow: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.nyt-logo {
+    margin-top: 4rem;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+h4 {
+    margin: 1rem auto;
+}
+
+
+/*top news results styling*/
+
+.top-news img {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.articleBackground {
+    height: 400px;
+    background-position: 50%;
+    background-size: cover;
+}
+
+
+/*footer styling section*/
+
+.footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    color: #c2c2c2;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 600px) {
+    /*logo and form styling*/
+    .logo-and-form {
+        -ms-flex-flow: row;
+        flex-flow: row;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    /* copyright styling for footer*/
+    .top-news li {
+        width: 33%;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        height: auto;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    /*logo and form styling*/
+    .logo-and-form {
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    /* copyright styling for footer*/
+    .footer {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        padding-left: 2rem;
+    }
+}

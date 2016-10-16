@@ -1,0 +1,100 @@
+@import "reset";
+@import "fonts";
+
+/*@font-face {
+    font-family: 'OpenSans-light';
+    src: url(fonts/OpenSans-Light.ttf)
+}*/
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    color: #fff;
+    /*text-align: center;*/
+    align-items: center;
+    height: 100%;
+}
+
+.logo-and-form {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nyt-logo {
+    margin-top: 4rem;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+h4 {
+    margin: 1rem auto;
+}
+
+
+/*top news results styling*/
+
+.top-news {
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.articleBackground {
+    height: 400px;
+    background-position: 50%;
+    background-size: cover;
+}
+
+
+/*footer styling section*/
+
+.footer {
+    display: flex;
+    justify-content: center;
+    // text-transform: uppercase;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+    color: #c2c2c2;
+}
+
+span {
+    text-transform: uppercase;
+}
+
+@media all and (min-width: 600px) {
+    /*logo and form styling*/
+    .logo-and-form {
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+    /* copyright styling for footer*/
+    .top-news {
+        flex-flow: row wrap;
+        flex-basis: 33%;
+        width: 33.333%;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    /*logo and form styling*/
+    .logo-and-form {
+        justify-content: flex-start;
+        align-items: center;
+    }
+    /* copyright styling for footer*/
+    .footer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 2rem;
+    }
+}
