@@ -1,0 +1,47 @@
+.logo-and-form {
+    margin-top: 3rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+        flex-flow: row;
+    }
+    @include desktop {
+        justify-content: flex-start;
+    }
+}
+
+.nyt-logo {
+    margin-top: 4rem;
+}
+
+form {
+    margin-bottom: 2rem;
+}
+
+h4 {
+    margin: 1rem auto;
+}
+
+.headerShrink {
+    height: 75px;
+    img {
+        height: 50px;
+    }
+    form {
+        padding-bottom: 3.75rem;
+    }
+    @include tablet {
+        height: 110px;
+        // transition: all 1s ease-in-out;
+        img {
+            height: 75px;
+            width: auto;
+            margin-bottom: 1rem;
+        }
+        form {
+            margin-top: 3rem;
+        }
+    }
+}

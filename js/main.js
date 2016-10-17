@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+    $('#dropdown').on('change', function() {
+        $('header').addClass('headerShrink');
+    });
+
     $("#dropdown").on('change', function(event) {
         event.preventDefault();
         // console.log('hope');
@@ -10,27 +14,35 @@ $(document).ready(function() {
         })
 
         $.ajax({
-                url: url,
-                method: 'GET',
+            url: url,
+            method: 'GET',
 
-            }).done(function(data) {
-                console.log(data);
-                $(".top-news").empty()
-                $.each(data.results, function(key, value) {
-                    // var background = "<li>";
-                    // background += "<div class='articleBackground' style='background-image:url(";
-                    // background += value.multimedia[4].url;
-                    // background += +")'></div></li>";
-                    console.log(value.multimedia[4].url)
-                    if (value.multimedia.length > 0) {
-                        $(".top-news").append("<li>" + "<a href=" + value.url + '>' + "<p class='abstract'>" + value.abstract + '</p>' + "<div class='articleBackground' style='background-image:url(" + value.multimedia[4].url + ")'></div></a></li>");
-                    }
-                });
+        }).done(function(data) {
+            // console.log(data);
+            $('.top-news').empty()
+            $.each(data.results, function(key, value) {
 
-            }).fail(function(err) {
-                throw err;
+                if (value.multimedia.length > 0) {
 
-            }) // console.log(result);
+                    var picture = value.multimedia[4].url,
+                        abstract = value.abstract,
+                        articleUrl = value.url,
 
+                        article = "<li>";
+                    article += "<a href=" + articleUrl + '>' + "<p class='abstract'>";
+                    article += abstract;
+                    article += "</p><div class='articleBackground' style='background-image:url(";
+                    article += picture;
+                    article += ")'></div></a></li>";
+
+                    // console.log(picture);
+
+                    $(".top-news").append(article)
+                }
+            });
+
+        }).fail(function(err) {
+            throw err;
+        })
     });
 });
