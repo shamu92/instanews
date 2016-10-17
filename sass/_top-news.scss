@@ -1,24 +1,29 @@
-/*top news results styling*/
+/*top news results styling*************************
+***************************************************/
 
 .top-news {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    margin-top: 3rem;
     li {
         width: 100%;
         @include tablet {
-            flex-basis: 33.333%;
+            flex-basis: 33.33%;
         }
         @include desktop {
             flex-basis: 25%;
         }
     }
     .articleBackground {
-        flex-flow: column;
         height: 400px;
         width: 100%;
         background-position: 50%;
         background-size: cover;
+        display: flex;
+        p {
+            align-self: flex-end;
+        }
     }
 }

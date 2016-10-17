@@ -4,6 +4,12 @@ $(document).ready(function() {
         $('header').addClass('headerShrink');
     });
 
+    $('#dropdown').on('change', function() {
+        $('.loading').show();
+    })
+
+
+
     $("#dropdown").on('change', function(event) {
         event.preventDefault();
         // console.log('hope');
@@ -29,11 +35,12 @@ $(document).ready(function() {
                         articleUrl = value.url,
 
                         article = "<li>";
-                    article += "<a href=" + articleUrl + '>' + "<p class='abstract'>";
-                    article += abstract;
-                    article += "</p><div class='articleBackground' style='background-image:url(";
+                    article += "<a href=" + articleUrl + '>';
+                    article += "<div class='articleBackground' style='background-image:url(";
                     article += picture;
-                    article += ")'></div></a></li>";
+                    article += ")'><p class='abstract'>";
+                    article += abstract;
+                    article += "</p></div></a></li>";
 
                     // console.log(picture);
 
@@ -43,6 +50,10 @@ $(document).ready(function() {
 
         }).fail(function(err) {
             throw err;
+        })
+
+        .always(function() {
+            $('.loading').hide();
         })
     });
 });

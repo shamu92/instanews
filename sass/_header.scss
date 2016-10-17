@@ -1,11 +1,15 @@
+/* Footer styling *******************************
+***************************************************/
+
 .logo-and-form {
-    margin-top: 3rem;
+    margin-top: 10rem;
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
     @include tablet {
         flex-flow: row;
+        align-items: center;
     }
     @include desktop {
         justify-content: flex-start;
@@ -13,11 +17,17 @@
 }
 
 .nyt-logo {
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-right: 3rem;
 }
 
 form {
-    margin-bottom: 2rem;
+    #dropdown {
+        width: 160px;
+        height: 28px;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 h4 {
@@ -26,22 +36,20 @@ h4 {
 
 .headerShrink {
     height: 75px;
-    img {
-        height: 50px;
-    }
+    margin-top: 1rem;
     form {
-        padding-bottom: 3.75rem;
+            margin-top: 3rem;
+        }
+    img {
+        height: 75px;
     }
     @include tablet {
         height: 110px;
-        // transition: all 1s ease-in-out;
         img {
-            height: 75px;
+            height: 55px;
             width: auto;
             margin-bottom: 1rem;
         }
-        form {
-            margin-top: 3rem;
-        }
+        
     }
 }
