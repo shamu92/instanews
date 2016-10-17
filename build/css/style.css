@@ -153,7 +153,7 @@ table {
   font-family: 'open sans';
   src: url("../fonts/opensans-lightitalic-webfont.eot");
   src: url("../../fonts/opensans-lightitalic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/opensans-lightitalic-webfont.woff2") format("woff2"), url("../fonts/opensans-lightitalic-webfont.woff") format("woff"), url("../fonts/opensans-lightitalic-webfont.ttf") format("truetype"), url("../fonts/opensans-lightitalic-webfont.svg#open_sanslight_italic") format("svg");
-  font-weight: lighter;
+  font-weight: 200;
   font-style: italic; }
 
 body {
