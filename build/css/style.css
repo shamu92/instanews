@@ -172,14 +172,15 @@ body {
   display: none; }
 
 .loading-gif {
-  height: 37vh;
+  padding-top: 3rem;
+  height: 20vh;
   display: block;
   margin: 0 auto; }
 
 /* Footer styling *******************************
 ***************************************************/
 .logo-and-form {
-  margin-top: 10rem;
+  height: 90vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: column;
@@ -200,28 +201,33 @@ body {
           justify-content: flex-start; } }
 
 .nyt-logo {
-  margin-top: 2rem;
-  margin-right: 3rem; }
+  margin-top: 2rem; }
+  @media (min-width: 600px) {
+    .nyt-logo {
+      margin-right: 1.5rem; } }
 
 form #dropdown {
   width: 160px;
   height: 28px;
-  font-size: 1.2rem;
-  margin-bottom: 2rem; }
+  font-size: 1.2rem; }
 
 h4 {
   margin: 1rem auto; }
 
 .headerShrink {
   height: 75px;
-  margin-top: 1rem; }
+  padding-top: 7rem; }
   .headerShrink form {
-    margin-top: 3rem; }
+    margin-top: 1rem;
+    padding-bottom: 7rem; }
   .headerShrink img {
     height: 75px; }
   @media (min-width: 600px) {
     .headerShrink {
-      height: 110px; }
+      height: 110px;
+      padding-top: 0; }
+      .headerShrink form {
+        padding-bottom: 0; }
       .headerShrink img {
         height: 55px;
         width: auto;
@@ -236,13 +242,13 @@ h4 {
       flex-wrap: wrap;
   width: 100%;
   height: auto;
-  margin-top: 3rem; }
+  padding-top: 2rem; }
   .top-news li {
     width: 100%; }
     @media (min-width: 600px) {
       .top-news li {
-        -ms-flex-preferred-size: 33.33%;
-            flex-basis: 33.33%; } }
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; } }
     @media (min-width: 1200px) {
       .top-news li {
         -ms-flex-preferred-size: 25%;
@@ -273,23 +279,17 @@ h4 {
 
 /* Footer styling *******************************
 ***************************************************/
-.footer {
+footer {
+  color: #c2c2c2;
+  height: 10vh;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: center;
-      justify-content: center;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-  color: #c2c2c2; }
-  @media (min-width: 600px) {
-    .footer .footer {
-      margin-bottom: 35%; } }
+      justify-content: center; }
   @media (min-width: 1200px) {
-    .footer {
+    footer {
       -ms-flex-pack: start;
           justify-content: flex-start;
-      -ms-flex-align: end;
-          align-items: flex-end;
       padding-left: 2rem; } }
 
 span {

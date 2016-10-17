@@ -6,11 +6,11 @@
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    margin-top: 3rem;
+    padding-top: 2rem;
     li {
         width: 100%;
         @include tablet {
-            flex-basis: 33.33%;
+            flex-basis: 50%;
         }
         @include desktop {
             flex-basis: 25%;

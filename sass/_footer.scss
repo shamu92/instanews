@@ -1,21 +1,13 @@
 /* Footer styling *******************************
 ***************************************************/
 
-.footer {
+footer {
+    color: #c2c2c2;
+    height: 10vh;
     display: flex;
     justify-content: center;
-    // text-transform: uppercase;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    color: #c2c2c2;
-    @include tablet {
-        .footer {
-            margin-bottom: 35%;
-        }
-    }
     @include desktop {
         justify-content: flex-start;
-        align-items: flex-end;
         padding-left: 2rem;
     }
 }

@@ -2,7 +2,7 @@
 ***************************************************/
 
 .logo-and-form {
-    margin-top: 10rem;
+    height: 90vh;
     display: flex;
     flex-flow: column;
     justify-content: center;
@@ -18,7 +18,9 @@
 
 .nyt-logo {
     margin-top: 2rem;
-    margin-right: 3rem;
+    @include tablet {
+        margin-right: 1.5rem;
+    }
 }
 
 form {
@@ -26,7 +28,6 @@ form {
         width: 160px;
         height: 28px;
         font-size: 1.2rem;
-        margin-bottom: 2rem;
     }
 }
 
@@ -36,20 +37,24 @@ h4 {
 
 .headerShrink {
     height: 75px;
-    margin-top: 1rem;
+    padding-top: 7rem;
     form {
-            margin-top: 3rem;
-        }
+        margin-top: 1rem;
+        padding-bottom: 7rem;
+    }
     img {
         height: 75px;
     }
     @include tablet {
         height: 110px;
+        padding-top: 0;
+        form {
+            padding-bottom: 0;
+        }
         img {
             height: 55px;
             width: auto;
             margin-bottom: 1rem;
         }
-        
     }
 }
