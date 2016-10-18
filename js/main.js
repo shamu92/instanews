@@ -44,9 +44,7 @@ $(document).ready(function() {
                 article += ")'><p class='abstract'>";
                 article += abstract;
                 article += "</p></div></a></li>";
-
                 // console.log(picture);
-
                 $(".top-news").html(article)
             });
 
