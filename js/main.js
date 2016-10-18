@@ -10,7 +10,8 @@ $(document).ready(function() {
 
 
     $("#dropdown").on('change', function(event) {
-        event.preventDefault();
+        
+        
         // console.log('hope');
         var selected = $('#dropdown').val();
         var url = "https://api.nytimes.com/svc/topstories/v2/" + selected + ".json";
