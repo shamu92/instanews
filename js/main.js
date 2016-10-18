@@ -50,6 +50,9 @@ $(document).ready(function() {
                 $(".top-news").html(article)
             });
 
+            // $("top-stories").mouseenter('li', function() {
+            //     $(this).find('.abstract').slideUp(1000);
+            // })
         }).fail(function(err) {
             throw err;
         })
