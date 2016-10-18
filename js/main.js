@@ -1,15 +1,15 @@
     $(document).ready(function() {
-    
-    
 
 
-    $("#dropdown").on('change', function(event) {
-        $('header').addClass('headerShrink');
+
+        $("#dropdown").on('change', function(event) {
+            $('header').addClass('headerShrink');
         //shrinks the header  
         $('.loading').show();
         //shows the loading image when selection is chosen from drop down.
         // event.preventDefault();
         // console.log('hope');
+        // you could add a way to delete the selection category after.
         var selected = $('#dropdown').val();
         var url = "https://api.nytimes.com/svc/topstories/v2/" + selected + ".json";
         url += '?' + $.param({
@@ -59,4 +59,4 @@
             $('.loading').hide();
         })
     });
-});
+    });
