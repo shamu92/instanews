@@ -45,14 +45,16 @@ $(document).ready(function() {
                 article += abstract;
                 article += "</p></div></a></li>";
                 // console.log(picture);
-                $(".top-news").html(article)
+                
             });
-
+                $(".top-news").html(article)
             // $("top-stories").mouseenter('li', function() {
             //     $(this).find('.abstract').slideUp(1000);
             // })
         }).fail(function(err) {
             throw err;
+            // There isint anything happening if NYT doesnt reply
+            
         })
 
         .always(function() {
