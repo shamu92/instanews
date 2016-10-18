@@ -1,15 +1,13 @@
-$(document).ready(function() {
-    //shrinks the header 
-    $('#dropdown').on('change', function() {
-        $('header').addClass('headerShrink');
-    });
-    //shows the loading image when selection is chosen from drop down.
-    $('#dropdown').on('change', function() {
-        $('.loading').show();
-    })
+    $(document).ready(function() {
+    
+    
 
 
     $("#dropdown").on('change', function(event) {
+        $('header').addClass('headerShrink');
+        //shrinks the header  
+        $('.loading').show();
+        //shows the loading image when selection is chosen from drop down.
         // event.preventDefault();
         // console.log('hope');
         var selected = $('#dropdown').val();
@@ -34,8 +32,8 @@ $(document).ready(function() {
 
 
                 var picture = value.multimedia[4].url,
-                    abstract = value.abstract,
-                    articleUrl = value.url;
+                abstract = value.abstract,
+                articleUrl = value.url;
 
                 article += "<li>";
                 article += "<a href=" + articleUrl + '>';
@@ -47,7 +45,7 @@ $(document).ready(function() {
                 // console.log(picture);
                 
             });
-                $(".top-news").html(article)
+            $(".top-news").html(article)
             // $("top-stories").mouseenter('li', function() {
             //     $(this).find('.abstract').slideUp(1000);
             // })
