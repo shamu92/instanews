@@ -1,8 +1,5 @@
 /* Abstract styling *******************************
 ***************************************************/
-
-$desktop-width: 1200px;
-$tablet-width: 600px;
 @mixin tablet {
     @media (min-width: $tablet-width) {
         @content;

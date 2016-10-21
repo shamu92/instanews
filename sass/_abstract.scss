@@ -3,13 +3,14 @@
 
 .top-news a {
     text-decoration: none;
-    background-color: lightgrey;
+    // background-color: lightgrey;
+    // This background color doesnt seem to do anything.
 }
 
 .abstract {
     text-align: center;
     padding: 1rem .5rem;
-    color: #fff;
+    // color: #fff; this color is redundant since you are already declaring it on the body
     line-height: 1.5;
     background: rgba(0, 0, 0, .5);
     position: relative;
