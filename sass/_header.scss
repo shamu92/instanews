@@ -13,6 +13,7 @@
     }
     @include desktop {
         justify-content: flex-start;
+        margin-left: 2rem;
     }
 }
 
@@ -37,6 +38,7 @@ h4 {
 
 .headerShrink {
     height: 75px;
+    transition: .75s;
     padding-top: 7rem;
     form {
         margin-top: 1rem;

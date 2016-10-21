@@ -5,7 +5,7 @@ $(document).ready(function() {
     });
     //shows the loading image when selection is chosen from drop down.
     $('#dropdown').on('change', function() {
-        $('.loading').show();
+        $('.loading-gif').show();
     })
 
 
@@ -58,7 +58,7 @@ $(document).ready(function() {
         })
 
         .always(function() {
-            $('.loading').hide();
+            $('.loading-gif').hide();
         })
     });
 });

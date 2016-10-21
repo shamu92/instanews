@@ -6,6 +6,7 @@ footer {
     height: 10vh;
     display: flex;
     justify-content: center;
+    margin-top: 1rem;
     @include desktop {
         justify-content: flex-start;
         padding-left: 2rem;
