@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-$(document).ready(function() {
+
+$(document).ready(() => {
     //shrinks the header 
     $('#dropdown').on('change', function() {
         $('header').addClass('headerShrink');
@@ -8,9 +8,9 @@ $(document).ready(function() {
     $('#dropdown').on('change', function() {
         $('.loading-gif').show();
     })
-=======
+
     $(document).ready(function() {
->>>>>>> 74b5602403f36625c3d8dd7aedb2c0729e997d9b
+
 
 
 
@@ -22,8 +22,8 @@ $(document).ready(function() {
         // event.preventDefault();
         // console.log('hope');
         // you could add a way to delete the selection category after.
-        var selected = $('#dropdown').val();
-        var url = "https://api.nytimes.com/svc/topstories/v2/" + selected + ".json";
+        let selected = $('#dropdown').val();
+        let url = "https://api.nytimes.com/svc/topstories/v2/" + selected + ".json";
         url += '?' + $.param({
             'api-key': "dc5656d92ff342a29d20a1cc5a35b0c0"
         })
@@ -34,8 +34,8 @@ $(document).ready(function() {
 
         }).done(function(data) {
             // console.log(data);
-            var article = "";
-            var dataResults = data.results.filter(function(value) {
+            let article = "";
+            let dataResults = data.results.filter(function(value) {
                 return value.multimedia.length >= 5;
             })
             dataResults.splice(12);
@@ -43,7 +43,7 @@ $(document).ready(function() {
             $.each(dataResults, function(key, value) {
 
 
-                var picture = value.multimedia[4].url,
+                let picture = value.multimedia[4].url,
                 abstract = value.abstract,
                 articleUrl = value.url;
 
@@ -67,8 +67,9 @@ $(document).ready(function() {
             
         })
 
-        .always(function() {
+        .always(() => {
             $('.loading-gif').hide();
         })
     });
-    });
+    })
+});
