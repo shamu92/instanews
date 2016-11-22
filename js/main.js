@@ -1,5 +1,3 @@
-export const a = 12
-
 $(document).ready(function() {
 
     $("#dropdown").on('change', (event) => {
