@@ -37,9 +37,9 @@ $(document).ready(function() {
                 article += "<a href=" + articleUrl + '>';
                 article += "<div class='articleBackground' style='background-image:url(";
                 article += picture;
-                article += ")'><p class='abstract'>";
+                article += ")'><div class='abstract-div'><p class='abstract'>";
                 article += abstract;
-                article += "</p></div></a></li>";
+                article += "</p></div></div></a></li>";
                 // console.log(picture);
             });
             $(".top-news").html(article)

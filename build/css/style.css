@@ -1,5 +1,7 @@
 /* Abstract styling *******************************
 ***************************************************/
+/* Abstract styling *******************************
+***************************************************/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -128,8 +130,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Abstract styling *******************************
-***************************************************/
 /* Font styling *******************************
 ***************************************************/
 @font-face {
@@ -266,15 +266,14 @@ h4 {
     background-size: cover;
     display: -ms-flexbox;
     display: flex; }
-    .top-news .articleBackground p {
+    .top-news .articleBackground div {
       -ms-flex-item-align: end;
           align-self: flex-end; }
 
 /* Abstract styling *******************************
 ***************************************************/
 .top-news a {
-  text-decoration: none;
-  background-color: lightgrey; }
+  text-decoration: none; }
 
 .abstract {
   text-align: center;
