@@ -20,16 +20,11 @@
         height: 400px;
         width: 100%;
         background-position: 50%;
-        background-size: cover;
+        background-size: cover; 
         display: flex;
-        div {
+        overflow: hidden;
+        .abstract {
             align-self: flex-end;
-            max-height: 0;
-            overflow-y: hidden;
         }
     }
-}
-
-.abstract-div {
-    max-height: 250px;
 }

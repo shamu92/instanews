@@ -265,15 +265,11 @@ h4 {
     background-position: 50%;
     background-size: cover;
     display: -ms-flexbox;
-    display: flex; }
-    .top-news .articleBackground div {
+    display: flex;
+    overflow: hidden; }
+    .top-news .articleBackground .abstract {
       -ms-flex-item-align: end;
-          align-self: flex-end;
-      max-height: 0;
-      overflow-y: hidden; }
-
-.abstract-div {
-  max-height: 250px; }
+          align-self: flex-end; }
 
 /* Abstract styling *******************************
 ***************************************************/
@@ -285,8 +281,17 @@ h4 {
   padding: 1rem .5rem;
   color: #fff;
   line-height: 1.5;
-  background: rgba(0, 0, 0, 0.5);
-  position: relative; }
+  background: rgba(0, 0, 0, 0.5); }
+
+@media (min-width: 1200px) {
+  .articleBackground:hover .abstract {
+    max-height: 250px;
+    visibility: visible; }
+  .abstract {
+    transition: 0.8s ease-in-out;
+    max-height: 0;
+    margin-top: 3rem;
+    visibility: hidden; } }
 
 /* Footer styling *******************************
 ***************************************************/
