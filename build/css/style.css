@@ -268,7 +268,12 @@ h4 {
     display: flex; }
     .top-news .articleBackground div {
       -ms-flex-item-align: end;
-          align-self: flex-end; }
+          align-self: flex-end;
+      max-height: 0;
+      overflow-y: hidden; }
+
+.abstract-div {
+  max-height: 250px; }
 
 /* Abstract styling *******************************
 ***************************************************/
