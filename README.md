@@ -1,4 +1,4 @@
-# Instanews project 1 
+# Instanews
 
 ## Link to site: https://shamu92.github.io/instanews/
 
