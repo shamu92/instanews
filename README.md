@@ -27,4 +27,4 @@ The data requirements from the project concepts allowed me to investigate the pr
 * NYT API Key - http://developer.nytimes.com/
 * Gulp Plugins - http://gulpjs.com/plugins/
 
-## Created by: Aleksandr Altshteyn
+### Created by: Aleksandr Altshteyn
